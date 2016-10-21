@@ -1,0 +1,12 @@
+.gitconfig.local
+
+.DS_Store
+Desktop.ini
+
+._*
+*~
+Thumbs.db
+
+.idea
+
+*.pyc
