@@ -6,5 +6,5 @@
  - clean: ['~', '~/.config']
  
  - link:
-    ~/.gitconfig: git/.gitconfig
-    ~/.gitignore: git/.gitignore
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
