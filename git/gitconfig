@@ -48,6 +48,9 @@
     # Merge
     m = merge
 
+    # Fetch
+    f = fetch --tags --prune
+
     # Pull
     up = pull
     plom = pull origin master
