@@ -35,7 +35,8 @@
 
     # Checkout
     co = checkout
-    cb = checkout -b
+    com = checkout master
+    cob = checkout -b
 
     # Cherry-pick
     cp = cherry-pick
@@ -50,7 +51,7 @@
 
     # Fetch
     f = fetch --tags --prune
-
+    
     # Pull
     up = pull
     plom = pull origin master
