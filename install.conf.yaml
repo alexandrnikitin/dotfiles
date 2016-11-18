@@ -3,8 +3,8 @@
       create: true
       relink: true
  
- - clean: ['~', '~/.config']
+- clean: ['~', '~/.config']
  
- - link:
+- link:
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
