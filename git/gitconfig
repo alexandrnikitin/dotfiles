@@ -18,10 +18,10 @@
     bn = rev-parse --abbrev-ref HEAD
     bd = diff master...HEAD
     bdf = "!git diff master...HEAD --name-status | sed '/^D/d ; s/^.\\s\\+//'"
-    bml = "!git chekcout master && git pull && git branch --merged | grep -v master | sed 's|origin/||' | xargs -n 1 echo"
-    bmd = "!git chekcout master && git pull && git branch --merged | grep -v master | sed 's|origin/||' | xargs -n 1 git branch -d"
-    bmlr = "!git chekcout master && git pull && git branch -r --merged | grep -v master | sed 's|origin/||' | xargs -n 1 echo"
-    bmdr = "!git chekcout master && git pull && git branch -r --merged | grep -v master | sed 's|origin/||' | xargs -n 1 git push --delete origin"
+    bml = "!git checkout master && git pull && git branch --merged | grep -v master | sed 's|origin/||' | xargs -n 1 echo"
+    bmd = "!git checkout master && git pull && git branch --merged | grep -v master | sed 's|origin/||' | xargs -n 1 git branch -d"
+    bmlr = "!git checkout master && git pull && git branch -r --merged | grep -v master | sed 's|origin/||' | xargs -n 1 echo"
+    bmdr = "!git checkout master && git pull && git branch -r --merged | grep -v master | sed 's|origin/||' | xargs -n 1 git push --delete origin"
 
     # Commit
     c = commit
