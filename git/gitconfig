@@ -6,6 +6,7 @@
     editor = vim
     ignorecase = false
     excludesfile = ~/.gitignore
+    autocrlf = true
 
 [alias]
 
@@ -53,7 +54,7 @@
     f = fetch --tags --prune
     
     # Pull
-    up = pull
+    up = !git f && git pull
     plom = pull origin master
     plum = pull upstream master
     preb = !git fetch upstream && git rebase upstream/master
@@ -73,6 +74,7 @@
     hist = log --graph --pretty=custom           # Show custom graph
     l = log --pretty=custom                      # Show custom log
     ll = log --stat --abbrev-commit
+    tl = for-each-ref --sort=taggerdate --format '%(refname) %(taggerdate)' refs/tags
 
     search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
     g = grep --break --heading --line-number
