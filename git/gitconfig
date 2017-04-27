@@ -74,7 +74,7 @@
     hist = log --graph --pretty=custom           # Show custom graph
     l = log --pretty=custom                      # Show custom log
     ll = log --stat --abbrev-commit
-    tl = for-each-ref --sort=taggerdate --format '%(refname) %(taggerdate)' refs/tags
+    tl = log --tags --simplify-by-decoration --pretty='format:%ai %d'
 
     search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
     g = grep --break --heading --line-number
