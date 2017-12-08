@@ -42,7 +42,7 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# focus_follows_mouse no
+focus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
@@ -287,4 +287,4 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-for_window [class=^.*] floating enable
+#for_window [class=^.*] floating enable
