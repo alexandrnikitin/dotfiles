@@ -87,6 +87,9 @@
     # Submodules
     subpl = submodule update --init --recursive
 
+[filter "remove-pass"]
+    clean = "sed -e 's/^password=.*/#password=TODO/'"
+
 [grep]
     lineNumber = true
     extendRegexp = true
